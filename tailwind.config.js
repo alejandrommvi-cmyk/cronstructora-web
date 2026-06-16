@@ -8,15 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        obsidian: '#0A0A0A',
-        gold: {
-          DEFAULT: '#C4A97C',
-          light: '#E2C99E',
-          dark: '#A8864F',
+        cms: {
+          orange: '#F5A623',
+          'orange-light': '#F7B84B',
+          'orange-dark': '#C8881A',
+          charcoal: '#2D2D2D',
+          dark: '#0F0E0E',
+          surface: '#161514',
         },
-        cream: '#F5F1EB',
-        ivory: '#FAFAF8',
-        pearl: '#E8E4DE',
+        cream: '#F4F1EC',
+        ivory: '#FAF8F5',
       },
       fontFamily: {
         display: ['var(--font-playfair)', 'Georgia', 'serif'],

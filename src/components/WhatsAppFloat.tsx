@@ -21,7 +21,7 @@ export default function WhatsAppFloat() {
       <motion.span
         animate={{ scale: [1, 1.4, 1] }}
         transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-        className="absolute -top-1 -right-1 w-3 h-3 bg-[#C4A97C] rounded-full"
+        className="absolute -top-1 -right-1 w-3 h-3 bg-[#F5A623] rounded-full"
       />
     </motion.a>
   )
