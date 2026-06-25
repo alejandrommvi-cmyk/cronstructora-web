@@ -18,36 +18,37 @@ export default function AboutSection() {
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-8 h-px bg-[#F5A623]" />
-              <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">Sobre CMS</span>
+              <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">Quiénes somos</span>
             </div>
 
             <h2 className="font-display text-4xl lg:text-5xl xl:text-6xl text-white font-light leading-[1.1] mb-10">
-              Construimos el
-              <br />futuro de Canarias,
-              <br /><span className="italic text-[#F5A623]">planta a planta.</span>
+              Construimos el futuro
+              <br />de Canarias,
+              <br /><span className="italic text-[#F5A623]">modulo a módulo.</span>
             </h2>
 
             <div className="space-y-5 text-white/45 font-light leading-relaxed text-sm lg:text-base">
               <p>
-                En CMS somos pioneros en la construcción modular de lujo en las Islas Canarias.
-                Llevamos más de una década diseñando y entregando viviendas de una planta que
-                combinan arquitectura contemporánea, eficiencia energética A+ y acabados premium.
+                Canary Modular System nació de una convicción: que construir una vivienda de máxima
+                calidad debía ser un proceso transparente, eficiente y totalmente personalizado.
+                Somos especialistas en viviendas modulares industrializadas de lujo en las Islas Canarias.
               </p>
               <p>
-                El método modular nos permite controlar cada milímetro del proceso: desde la
-                fabricación en taller hasta la instalación en tu parcela. El resultado es una
-                vivienda de calidad superior en la mitad del tiempo de la construcción tradicional.
+                Nuestro método combina tecnología de construcción de alta precisión con acabados
+                de primera gama. Cada vivienda se fabrica módulo a módulo en nuestro taller,
+                con control total de calidad y al margen de las incidencias de la obra tradicional.
               </p>
               <p>
-                Cada proyecto es único. Trabajamos directamente con el cliente para diseñar el
-                hogar exactamente como lo imagina, sin compromisos ni sorpresas.
+                Con sede en Telde, Gran Canaria, actuamos en todas las islas y en la Península.
+                Nuestro equipo de arquitectos, ingenieros y maestros de obra garantiza un resultado
+                excepcional — y un presupuesto cerrado desde el primer día.
               </p>
             </div>
 
             <div className="mt-12 pt-10 border-t border-white/8 grid grid-cols-2 gap-10">
               <div>
                 <p className="font-display text-4xl text-white font-light mb-2">90 días</p>
-                <p className="text-white/25 text-xs tracking-[0.2em] uppercase">Entrega media garantizada</p>
+                <p className="text-white/25 text-xs tracking-[0.2em] uppercase">Plazo medio de entrega</p>
               </div>
               <div>
                 <p className="font-display text-4xl text-white font-light mb-2">A+</p>
@@ -73,8 +74,8 @@ export default function AboutSection() {
           >
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&q=88&fit=crop"
-                alt="Construcción modular de lujo CMS"
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=88&fit=crop"
+                alt="Vivienda modular de lujo Canary Modular System"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

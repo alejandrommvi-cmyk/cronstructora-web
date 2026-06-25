@@ -6,14 +6,14 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'CMS — Construcción Modular Canarias | Viviendas de lujo llave en mano',
+  title: 'Canary Modular System — Construimos hogares. Diseñamos libertad.',
   description:
-    'Construcción modular de lujo en Canarias. Viviendas de una planta, diseño exclusivo, eficiencia A+ y entrega llave en mano. Solicita tu presupuesto.',
+    'Canary Modular System. Diseñamos y construimos viviendas modulares de máxima calidad en Canarias. Personalizadas, eficientes, llave en mano. Transformamos la forma de vivir.',
   keywords:
-    'construcción modular canarias, viviendas modulares lujo, casas modulares canarias, arquitectura modular, viviendas prefabricadas lujo, CMS canarias',
+    'canary modular system, construcción modular canarias, viviendas modulares lujo, casas modulares canarias, vivienda prefabricada acero, construcción industrializada canarias',
   openGraph: {
-    title: 'CMS — Construcción Modular Canarias',
-    description: 'Viviendas modulares de lujo de una planta. Diseño exclusivo, eficiencia A+.',
+    title: 'Canary Modular System — Construimos hogares. Diseñamos libertad.',
+    description: 'Viviendas modulares de alta calidad en Canarias. Personalizadas, eficientes y llave en mano.',
     type: 'website',
   },
 }

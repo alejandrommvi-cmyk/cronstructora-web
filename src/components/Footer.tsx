@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-[#F5A623] text-sm tracking-[0.3em] uppercase font-medium block">CMS</span>
-                <span className="text-white/25 text-xs tracking-[0.15em] uppercase font-light">Construcción Modular Canarias</span>
+                <span className="text-white/25 text-xs tracking-[0.15em] uppercase font-light">Canary Modular System</span>
               </div>
             </div>
             <p className="text-white/25 text-sm leading-relaxed max-w-xs font-light">
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="py-6 border-t border-white/4 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/15 text-xs font-light">© 2024 CMS Construcción Modular Canarias. Todos los derechos reservados.</p>
+          <p className="text-white/15 text-xs font-light">© 2025 Canary Modular System. Todos los derechos reservados.</p>
           <div className="flex gap-8">
             {['Privacidad', 'Aviso legal', 'Cookies'].map((item) => (
               <a key={item} href="#" className="text-white/15 hover:text-white/40 text-xs font-light transition-colors duration-300">{item}</a>

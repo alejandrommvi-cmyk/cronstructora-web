@@ -79,7 +79,7 @@ export default function CTASection() {
               href="https://wa.me/34600000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 text-xs tracking-[0.15em] uppercase font-medium hover:bg-[#1db954] transition-colors duration-300"
+              className="inline-flex items-center gap-3 bg-[#F5A623] text-[#0F0E0E] px-8 py-4 text-xs tracking-[0.15em] uppercase font-medium hover:bg-[#F7B84B] transition-colors duration-300"
             >
               <MessageCircle size={16} />
               Contactar por WhatsApp

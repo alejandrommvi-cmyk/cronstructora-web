@@ -1,38 +1,38 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Home, Ruler, Zap, Leaf, Wrench, Key } from 'lucide-react'
+import { Layers, Sliders, Shield, Timer, Key, MapPin } from 'lucide-react'
 
 const services = [
   {
-    Icon: Home,
-    title: 'Vivienda modular de lujo',
-    description: 'Diseño y fabricación de viviendas modulares de una planta con acabados premium, materiales de alta gama y arquitectura contemporánea.',
+    Icon: Layers,
+    title: 'Construcción industrializada',
+    description: 'Fabricación de precisión milimétrica en taller controlado. Sin depender del clima ni de contratiempos de obra. Calidad consistente en cada módulo.',
   },
   {
-    Icon: Ruler,
-    title: 'Diseño a medida',
-    description: 'Cada hogar es único. Nuestro equipo de arquitectos crea un proyecto personalizado adaptado a tu parcela, estilo de vida y visión.',
+    Icon: Sliders,
+    title: 'Personalización total',
+    description: 'Cada vivienda es única. Planta libre, volumetría, materiales premium y acabados completamente a medida según tu visión y tu parcela.',
+  },
+  {
+    Icon: Shield,
+    title: 'Estructura de acero estructural',
+    description: 'Fabricamos sobre estructura de acero galvanizado de alta resistencia. Durabilidad superior, comportamiento sísmico certificado y garantía de 50 años.',
+  },
+  {
+    Icon: Timer,
+    title: 'Rapidez de ejecución',
+    description: 'De proyecto a llaves en menos de 90 días. La construcción industrializada elimina tiempos muertos y esperas propias de la obra tradicional.',
   },
   {
     Icon: Key,
-    title: 'Llave en mano',
-    description: 'Nos encargamos de todo: diseño, permisos, fabricación, instalación y acabados. Tú solo llegas el día de la entrega.',
+    title: 'Gestión integral llave en mano',
+    description: 'Un único interlocutor desde el primer boceto hasta la entrega. Diseño, permisos, fabricación, instalación y postventa incluidos.',
   },
   {
-    Icon: Zap,
-    title: 'Eficiencia energética A+',
-    description: 'Todas nuestras viviendas alcanzan la máxima calificación energética. Ahorra hasta un 80% en consumo con nuestra tecnología modular.',
-  },
-  {
-    Icon: Leaf,
-    title: 'Arquitectura bioclimática',
-    description: 'Diseño que aprovecha el clima canario: orientación solar, ventilación natural y materiales sostenibles de bajo impacto.',
-  },
-  {
-    Icon: Wrench,
-    title: 'Mantenimiento integral',
-    description: 'Servicio postventa con garantía de 10 años y plan de mantenimiento preventivo para mantener tu hogar en perfecto estado.',
+    Icon: MapPin,
+    title: 'Equipo local en Canarias',
+    description: 'Radicados en Gran Canaria, conocemos la normativa, el terreno y el clima de cada isla. Presupuesto cerrado desde el inicio, sin sorpresas.',
   },
 ]
 
@@ -52,8 +52,8 @@ export default function ServicesSection() {
               <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">Servicios</span>
             </div>
             <h2 className="font-display text-4xl lg:text-5xl xl:text-6xl text-[#0F0E0E] font-light leading-[1.1]">
-              Todo incluido,
-              <br /><span className="italic text-[#C8881A]">sin sorpresas</span>
+              Por qué elegir
+              <br /><span className="italic text-[#C8881A]">Canary Modular</span>
             </h2>
           </motion.div>
 
@@ -64,7 +64,7 @@ export default function ServicesSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-[#0F0E0E]/45 max-w-sm text-sm leading-relaxed font-light"
           >
-            Del concepto a las llaves en mano. Un único interlocutor, un único proceso, un resultado excepcional.
+            No somos constructores tradicionales. Somos fabricantes de viviendas de alta precisión con dominio total del proceso.
           </motion.p>
         </div>
 

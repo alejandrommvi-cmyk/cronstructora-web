@@ -47,8 +47,8 @@ export default function Navigation() {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-medium">CMS</span>
-                <span className="text-white/50 text-[10px] tracking-[0.2em] uppercase font-light mt-0.5 hidden sm:block">
-                  Construcción Modular
+                <span className="text-white/50 text-[10px] tracking-[0.18em] uppercase font-light mt-0.5 hidden sm:block">
+                  Canary Modular System
                 </span>
               </div>
             </a>
@@ -97,7 +97,10 @@ export default function Navigation() {
               <div className="relative w-9 h-9">
                 <Image src="/logo-dark.png" alt="CMS Logo" fill className="object-contain" />
               </div>
-              <span className="text-[#F5A623] text-sm tracking-[0.3em] uppercase font-medium">CMS</span>
+              <div className="flex flex-col leading-none">
+                <span className="text-[#F5A623] text-sm tracking-[0.3em] uppercase font-medium">CMS</span>
+                <span className="text-white/40 text-[9px] tracking-[0.18em] uppercase font-light mt-0.5">Canary Modular System</span>
+              </div>
             </div>
             <nav className="flex flex-col gap-5">
               {navLinks.map((link, i) => (

@@ -15,8 +15,8 @@ export default function HeroSection() {
     <section ref={ref} className="relative h-screen min-h-[700px] overflow-hidden" id="inicio">
       <motion.div style={{ y }} className="absolute inset-0 scale-110">
         <Image
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=90&fit=crop"
-          alt="Vivienda modular de lujo de una planta"
+          src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=90&fit=crop"
+          alt="Villa modular de lujo de una planta Canary Modular System"
           fill
           priority
           className="object-cover object-center"
@@ -41,7 +41,7 @@ export default function HeroSection() {
         >
           <div className="w-10 h-px bg-[#F5A623]" />
           <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">
-            Construcción Modular Canarias
+            Canary Modular System · Canarias
           </span>
         </motion.div>
 
@@ -53,7 +53,7 @@ export default function HeroSection() {
             transition={{ duration: 1.1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-[clamp(3rem,7.5vw,8rem)] text-white font-light leading-[0.92] tracking-[-0.02em]"
           >
-            El hogar
+            Construimos hogares.
           </motion.h1>
         </div>
         <div className="overflow-hidden mb-1">
@@ -63,7 +63,7 @@ export default function HeroSection() {
             transition={{ duration: 1.1, delay: 0.95, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-[clamp(3rem,7.5vw,8rem)] text-[#F5A623] font-light leading-[0.92] tracking-[-0.02em] italic"
           >
-            que imaginas,
+            Diseñamos
           </motion.h1>
         </div>
         <div className="overflow-hidden mb-14">
@@ -73,7 +73,7 @@ export default function HeroSection() {
             transition={{ duration: 1.1, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-[clamp(3rem,7.5vw,8rem)] text-white font-light leading-[0.92] tracking-[-0.02em]"
           >
-            disponible hoy.
+            libertad.
           </motion.h1>
         </div>
 

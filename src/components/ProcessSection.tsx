@@ -5,26 +5,44 @@ import { motion } from 'framer-motion'
 const steps = [
   {
     number: '01',
-    title: 'Consulta & Diseño',
-    description: 'Primera reunión para entender tu visión. Nuestros arquitectos crean el proyecto personalizado con planos, materiales y presupuesto cerrado.',
-    duration: '2–3 semanas',
+    title: 'Primera Reunión',
+    description: 'Conocemos tu proyecto: parcela, necesidades, estilo de vida y presupuesto. Establecemos las bases del hogar que vas a construir.',
+    duration: '1 semana',
   },
   {
     number: '02',
-    title: 'Permisos & Planificación',
-    description: 'Nos encargamos de toda la gestión administrativa: licencias de obra, permisos municipales y coordinación con organismos oficiales.',
-    duration: '4–6 semanas',
+    title: 'Estudio de Viabilidad',
+    description: 'Análisis técnico del terreno, normativa urbanística y factibilidad del proyecto. Validamos que todo es posible antes de comprometerte.',
+    duration: '1–2 semanas',
   },
   {
     number: '03',
-    title: 'Fabricación modular',
-    description: 'Tu vivienda se fabrica en nuestro taller con control de calidad exhaustivo. Módulos construidos en condiciones óptimas, sin depender del clima.',
-    duration: '6–8 semanas',
+    title: 'Diseño Arquitectónico',
+    description: 'Nuestros arquitectos crean el proyecto personalizado: planos, renders 3D, distribución interior, materiales y acabados exactamente a tu medida.',
+    duration: '2–3 semanas',
   },
   {
     number: '04',
-    title: 'Instalación & Entrega',
-    description: 'Los módulos se transportan y ensamblan en tu parcela en pocos días. Instalaciones, acabados y entrega de llaves con garantía de 10 años.',
+    title: 'Ingeniería y Documentación',
+    description: 'Proyecto técnico completo, cálculo estructural de acero y gestión íntegra de licencias y permisos con las administraciones competentes.',
+    duration: '2–3 semanas',
+  },
+  {
+    number: '05',
+    title: 'Fabricación Modular',
+    description: 'Los módulos de tu vivienda se fabrican en nuestro taller con control de calidad exhaustivo, en condiciones óptimas y sin depender del clima.',
+    duration: '6–8 semanas',
+  },
+  {
+    number: '06',
+    title: 'Transporte y Montaje',
+    description: 'Los módulos se transportan y ensamblan en parcela en tiempo récord. La estructura completa queda erguida y sellada en cuestión de días.',
+    duration: '1 semana',
+  },
+  {
+    number: '07',
+    title: 'Acabados y Entrega',
+    description: 'Instalaciones, acabados interiores, urbanización exterior y entrega de llaves. Con garantía estructural de 10 años y plan de mantenimiento.',
     duration: '1–2 semanas',
   },
 ]
@@ -51,20 +69,21 @@ export default function ProcessSection() {
             </h2>
           </div>
           <p className="text-white/30 max-w-xs text-sm leading-relaxed font-light">
-            El método modular CMS revoluciona los plazos sin comprometer un milímetro de calidad.
+            Siete fases de proceso industrializado, un único interlocutor y cero sorpresas. Así es el método Canary Modular.
           </p>
         </motion.div>
 
-        <div className="relative">
+        {/* Steps 01–04 */}
+        <div className="relative mb-12 lg:mb-16">
           <div className="hidden lg:block absolute top-[3.25rem] left-0 right-0 h-px bg-white/6" />
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-6">
-            {steps.map((step, i) => (
+            {steps.slice(0, 4).map((step, i) => (
               <motion.div
                 key={step.number}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.8, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
                 className="relative group"
               >
                 <div className="relative z-10 mb-10">
@@ -76,10 +95,43 @@ export default function ProcessSection() {
                 </div>
                 <div className="relative z-10">
                   <p className="text-[#F5A623] text-xs tracking-[0.2em] uppercase mb-4 font-light">{step.duration}</p>
-                  <h3 className="font-display text-2xl text-white mb-4 font-light">{step.title}</h3>
+                  <h3 className="font-display text-xl lg:text-2xl text-white mb-4 font-light">{step.title}</h3>
                   <p className="text-white/30 text-sm leading-relaxed font-light">{step.description}</p>
                 </div>
-                {i < steps.length - 1 && (
+                {i < 3 && (
+                  <div className="lg:hidden absolute left-[3.25rem] top-24 w-px h-12 bg-white/8" />
+                )}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Steps 05–07 */}
+        <div className="relative">
+          <div className="hidden lg:block absolute top-[3.25rem] left-0 w-3/4 h-px bg-white/6" />
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-6">
+            {steps.slice(4).map((step, i) => (
+              <motion.div
+                key={step.number}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+                className="relative group"
+              >
+                <div className="relative z-10 mb-10">
+                  <div className="w-[6.5rem] h-[6.5rem] border border-white/10 group-hover:border-[#F5A623]/40 transition-colors duration-500 flex items-center justify-center">
+                    <span className="font-display text-3xl text-white/15 group-hover:text-[#F5A623]/50 font-light transition-colors duration-500">
+                      {step.number}
+                    </span>
+                  </div>
+                </div>
+                <div className="relative z-10">
+                  <p className="text-[#F5A623] text-xs tracking-[0.2em] uppercase mb-4 font-light">{step.duration}</p>
+                  <h3 className="font-display text-xl lg:text-2xl text-white mb-4 font-light">{step.title}</h3>
+                  <p className="text-white/30 text-sm leading-relaxed font-light">{step.description}</p>
+                </div>
+                {i < 2 && (
                   <div className="lg:hidden absolute left-[3.25rem] top-24 w-px h-12 bg-white/8" />
                 )}
               </motion.div>
@@ -96,7 +148,7 @@ export default function ProcessSection() {
         >
           <a
             href="#contacto"
-            className="inline-flex items-center gap-4 px-12 py-5 border border-white/15 hover:border-[#F5A623] text-white/50 hover:text-[#F5A623] text-xs tracking-[0.2em] uppercase font-light transition-all duration-400 group"
+            className="inline-flex items-center gap-4 px-12 py-5 border border-white/15 hover:border-[#F5A623] text-white/50 hover:text-[#F5A623] text-xs tracking-[0.2em] uppercase font-light transition-all duration-300 group"
           >
             Iniciar mi proyecto modular
             <span className="w-5 h-px bg-current group-hover:w-8 transition-all duration-300" />
