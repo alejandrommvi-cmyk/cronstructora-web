@@ -4,28 +4,19 @@ import { motion } from 'framer-motion'
 
 const testimonials = [
   {
-    quote: 'Teníamos nuestras dudas sobre la construcción modular, pero CMS nos convenció desde el primer momento. La calidad de los acabados es indistinguible de una construcción tradicional, y en 90 días teníamos las llaves. Absolutamente increíble.',
+    quote: 'Llevábamos casi tres años buscando constructora. Visitamos obras, pedimos presupuestos, todo. Con CMS fue diferente desde la primera reunión: nos escucharon, nos enseñaron el taller, nos explicaron exactamente qué pasaría cada semana. Tres meses después abrimos la puerta de nuestra casa y no cambiábamos un solo detalle.',
     name: 'Javier & Lucía Hernández',
-    location: 'Lanzarote, Canarias',
     rating: 5,
-    year: '2024',
-    detail: 'Villa 240 m²',
   },
   {
-    quote: 'El proceso fue completamente transparente. Nos guiaron en cada paso, desde el diseño personalizado hasta la gestión de permisos. El resultado es una vivienda de una planta espectacular con vistas al mar. CMS superó todas nuestras expectativas.',
+    quote: 'Yo no entendía nada de construcción modular. Pensaba que sería algo prefabricado y frío. Cuando vi el resultado, no lo podía creer. La terraza, la luz natural, los materiales... es exactamente lo que siempre imaginé. Y sin las obras interminables que vivieron mis vecinos.',
     name: 'María del Carmen Suárez',
-    location: 'Gran Canaria',
     rating: 5,
-    year: '2024',
-    detail: 'Residencia 195 m²',
   },
   {
-    quote: 'La eficiencia energética A+ nos ha cambiado la vida. Consumimos un 75% menos que en nuestra casa anterior. Además el diseño arquitectónico es precioso — modernos, funcionales y con carácter. CMS es la mejor decisión que hemos tomado.',
+    quote: 'Lo que más valoro fue la transparencia. Cada semana nos llegaba una actualización del proceso con fotos del taller. Sin llamadas de obra pidiendo más dinero, sin sorpresas de última hora. El presupuesto cerrado fue real — pagamos exactamente lo que nos dijeron desde el primer día.',
     name: 'Antonio & Elena Romero',
-    location: 'Tenerife, Canarias',
     rating: 5,
-    year: '2023',
-    detail: 'Casa bioclimática 175 m²',
   },
 ]
 
@@ -67,12 +58,9 @@ export default function TestimonialsSection() {
                 ))}
               </div>
               <div className="font-display text-7xl text-[#F5A623]/15 leading-none mb-4 select-none">"</div>
-              <p className="text-[#0F0E0E]/65 text-sm lg:text-base leading-[1.8] font-light flex-grow">{t.quote}</p>
+              <p className="text-[#0F0E0E]/70 text-sm lg:text-base leading-[1.8] font-light flex-grow">{t.quote}</p>
               <div className="mt-10 pt-8 border-t border-[#0F0E0E]/8">
                 <p className="font-display text-[#0F0E0E] text-base font-normal">{t.name}</p>
-                <p className="text-[#0F0E0E]/35 text-xs tracking-[0.15em] uppercase mt-1.5 font-light">
-                  {t.location} · {t.detail} · {t.year}
-                </p>
               </div>
             </motion.div>
           ))}

@@ -27,7 +27,7 @@ export default function AboutSection() {
               <br /><span className="italic text-[#F5A623]">modulo a módulo.</span>
             </h2>
 
-            <div className="space-y-5 text-white/45 font-light leading-relaxed text-sm lg:text-base">
+            <div className="space-y-5 text-white/60 font-light leading-relaxed text-sm lg:text-base">
               <p>
                 Canary Modular System nació de una convicción: que construir una vivienda de máxima
                 calidad debía ser un proceso transparente, eficiente y totalmente personalizado.
@@ -39,7 +39,7 @@ export default function AboutSection() {
                 con control total de calidad y al margen de las incidencias de la obra tradicional.
               </p>
               <p>
-                Con sede en Telde, Gran Canaria, actuamos en todas las islas y en la Península.
+                Con sede en Santa Cruz de Tenerife, actuamos en todas las islas y en la Península.
                 Nuestro equipo de arquitectos, ingenieros y maestros de obra garantiza un resultado
                 excepcional — y un presupuesto cerrado desde el primer día.
               </p>

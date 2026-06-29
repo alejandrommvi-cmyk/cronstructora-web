@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Instagram, Linkedin, Facebook } from 'lucide-react'
 
 const navLinks = [
-  { href: '#proyectos', label: 'Proyectos' },
+  { href: '#galeria', label: 'Galería' },
   { href: '#servicios', label: 'Servicios' },
   { href: '#nosotros', label: 'Sobre CMS' },
   { href: '#proceso', label: 'Nuestro proceso' },
@@ -62,8 +62,8 @@ export default function Footer() {
               <li className="text-white/30 text-sm font-light">hola@cmscanarias.com</li>
               <li className="text-white/30 text-sm font-light">+34 900 000 000</li>
               <li className="text-white/30 text-sm font-light leading-relaxed">
-                Polígono Industrial Las Majoreras<br />
-                35200 · Telde, Las Palmas
+                Av. de Anaga, 35<br />
+                38001 · Santa Cruz de Tenerife
               </li>
             </ul>
             <div className="mt-6 pt-6 border-t border-white/5">

@@ -1,38 +1,38 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Layers, Sliders, Shield, Timer, Key, MapPin } from 'lucide-react'
+import { Layers, Sliders, Timer, Key, MapPin } from 'lucide-react'
 
 const services = [
   {
     Icon: Layers,
+    number: '01',
     title: 'Construcción industrializada',
     description: 'Fabricación de precisión milimétrica en taller controlado. Sin depender del clima ni de contratiempos de obra. Calidad consistente en cada módulo.',
   },
   {
     Icon: Sliders,
+    number: '02',
     title: 'Personalización total',
     description: 'Cada vivienda es única. Planta libre, volumetría, materiales premium y acabados completamente a medida según tu visión y tu parcela.',
   },
   {
-    Icon: Shield,
-    title: 'Estructura de acero estructural',
-    description: 'Fabricamos sobre estructura de acero galvanizado de alta resistencia. Durabilidad superior, comportamiento sísmico certificado y garantía de 50 años.',
-  },
-  {
     Icon: Timer,
+    number: '03',
     title: 'Rapidez de ejecución',
     description: 'De proyecto a llaves en menos de 90 días. La construcción industrializada elimina tiempos muertos y esperas propias de la obra tradicional.',
   },
   {
     Icon: Key,
+    number: '04',
     title: 'Gestión integral llave en mano',
     description: 'Un único interlocutor desde el primer boceto hasta la entrega. Diseño, permisos, fabricación, instalación y postventa incluidos.',
   },
   {
     Icon: MapPin,
+    number: '05',
     title: 'Equipo local en Canarias',
-    description: 'Radicados en Gran Canaria, conocemos la normativa, el terreno y el clima de cada isla. Presupuesto cerrado desde el inicio, sin sorpresas.',
+    description: 'Radicados en Santa Cruz de Tenerife, conocemos la normativa, el terreno y el clima de cada isla. Presupuesto cerrado desde el inicio, sin sorpresas.',
   },
 ]
 
@@ -53,7 +53,7 @@ export default function ServicesSection() {
             </div>
             <h2 className="font-display text-4xl lg:text-5xl xl:text-6xl text-[#0F0E0E] font-light leading-[1.1]">
               Por qué elegir
-              <br /><span className="italic text-[#C8881A]">Canary Modular</span>
+              <br /><span className="italic text-[#C8881A]">Canary Modular System</span>
             </h2>
           </motion.div>
 
@@ -62,36 +62,43 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[#0F0E0E]/45 max-w-sm text-sm leading-relaxed font-light"
+            className="text-[#0F0E0E]/55 max-w-sm text-sm leading-relaxed font-light"
           >
             No somos constructores tradicionales. Somos fabricantes de viviendas de alta precisión con dominio total del proceso.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-[#0F0E0E]/8">
-          {services.map(({ Icon, title, description }, i) => (
+          {services.map(({ Icon, number, title, description }, i) => (
             <motion.div
               key={title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: i * 0.08 }}
-              className="group border-b border-r border-[#0F0E0E]/8 p-10 lg:p-12 hover:bg-[#0F0E0E] transition-all duration-500 cursor-pointer relative overflow-hidden"
+              transition={{ duration: 0.8, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              className="group border-b border-r border-[#0F0E0E]/8 p-10 lg:p-12 hover:bg-[#0A0908] transition-all duration-500 cursor-pointer relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-[#F5A623]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* Number watermark */}
+              <div className="absolute top-5 right-8 font-display text-8xl text-[#0A0908]/4 group-hover:text-white/4 transition-colors duration-500 leading-none select-none pointer-events-none">
+                {number}
+              </div>
+
+              {/* Top border reveal */}
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#F5A623] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
 
               <div className="relative z-10 mb-8">
-                <div className="w-10 h-10 border border-[#F5A623]/30 group-hover:border-[#F5A623]/60 flex items-center justify-center transition-colors duration-500">
-                  <Icon size={16} className="text-[#F5A623] stroke-[1.5]" />
+                <div className="w-12 h-12 border border-[#F5A623]/30 group-hover:border-[#F5A623]/65 group-hover:bg-[#F5A623]/8 flex items-center justify-center transition-all duration-500">
+                  <Icon size={18} className="text-[#F5A623] stroke-[1.5]" />
                 </div>
               </div>
 
               <h3 className="font-display text-xl text-[#0F0E0E] group-hover:text-white mb-4 font-light transition-colors duration-500 relative z-10">
                 {title}
               </h3>
-              <p className="text-[#0F0E0E]/50 group-hover:text-white/40 text-sm leading-relaxed font-light transition-colors duration-500 relative z-10">
+              <p className="text-[#0F0E0E]/55 group-hover:text-white/45 text-sm leading-relaxed font-light transition-colors duration-500 relative z-10">
                 {description}
               </p>
+
               <div className="mt-8 flex items-center gap-2 text-[#F5A623] text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 relative z-10">
                 Saber más →
               </div>

@@ -144,7 +144,7 @@ function ProjectCard({ project, delay = 0 }: { project: typeof projects[0]; dela
 
 export default function PortfolioSection() {
   return (
-    <section id="proyectos" className="bg-[#0A0908]">
+    <section id="galeria" className="bg-[#0A0908]">
 
       {/* Norris-style split panels */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -158,16 +158,16 @@ export default function PortfolioSection() {
         />
         <SplitPanel
           image="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=88&fit=crop"
-          eyebrow="Nuestros proyectos"
-          title={'Explora el\nportfolio CMS'}
+          eyebrow="Nuestra galería"
+          title={'Explora la\ngalería CMS'}
           btnLabel="Ver todo"
-          href="#proyectos-grid"
+          href="#galeria-grid"
           delay={0.1}
         />
       </div>
 
       {/* Project grid */}
-      <div id="proyectos-grid" className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+      <div id="galeria-grid" className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -176,7 +176,7 @@ export default function PortfolioSection() {
           className="flex items-center gap-4 mb-14"
         >
           <div className="w-8 h-px bg-[#F5A623]" />
-          <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">Proyectos realizados</span>
+          <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">Galería de proyectos</span>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">

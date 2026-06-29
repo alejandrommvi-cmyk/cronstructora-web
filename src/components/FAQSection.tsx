@@ -6,28 +6,28 @@ import { Plus, Minus } from 'lucide-react'
 
 const faqs = [
   {
-    q: '¿Cuánto tiempo tarda en estar lista mi vivienda?',
-    a: 'El plazo medio es de 90 días desde la firma del contrato hasta la entrega de llaves. Este plazo incluye diseño arquitectónico, fabricación modular en taller, transporte, montaje en parcela y acabados interiores y exteriores.',
+    q: '¿Los 90 días son reales?',
+    a: 'Sí. El plazo arranca desde la firma del contrato y cubre diseño final, fabricación en taller, transporte, montaje en parcela e instalaciones y acabados. La clave es que la mayor parte del tiempo ocurre bajo techo en nuestras instalaciones — sin esperas por lluvia, sin retrasos por permisos menores. En la primera reunión te mostramos el cronograma real de proyectos anteriores.',
   },
   {
-    q: '¿Puedo personalizar completamente el diseño?',
-    a: 'Totalmente. Cada vivienda se diseña desde cero según tu visión, parcela y necesidades. Trabajamos con planta libre: distribución, materiales, acabados, volumetría exterior y equipamiento son completamente a medida.',
+    q: '¿Puedo modificar la distribución a mitad del proceso?',
+    a: 'Antes de que empiece la fabricación, sí — casi todo. Por eso la fase de diseño no tiene prisa: trabajamos contigo hasta que cada detalle esté claro. Distribución, materiales, alturas, orientación. Una vez arranca el taller, los cambios estructurales no son posibles. Pero si llegamos a ese punto con dudas, algo habremos hecho mal nosotros.',
   },
   {
-    q: '¿Qué zonas de actuación cubrís?',
-    a: 'Operamos en todas las Islas Canarias (Gran Canaria, Tenerife, Lanzarote, Fuerteventura y demás islas), Península Ibérica y Portugal. Realizamos visitas previas y estudio de viabilidad en cada zona.',
+    q: '¿Cuánto cuesta aproximadamente?',
+    a: 'Nuestra horquilla habitual va de 1.800 a 2.800 €/m² para viviendas de una planta con calificación A+ y equipamiento incluido. El precio final depende de metros, distribución, acabados y accesibilidad de la parcela. En la primera reunión te damos una estimación orientativa sin ningún compromiso.',
   },
   {
-    q: '¿Qué incluye el servicio llave en mano?',
-    a: 'Incluye diseño arquitectónico, ingeniería estructural, gestión íntegra de licencias y permisos, fabricación modular, transporte, montaje, instalaciones completas (electricidad, fontanería, climatización), acabados interiores y exteriores, y entrega con garantía de 10 años.',
+    q: '¿Trabajáis en todas las islas Canarias?',
+    a: 'En todas: Gran Canaria, Tenerife, Lanzarote, Fuerteventura, La Palma, La Gomera y El Hierro. La logística de transporte modular entre islas forma parte de nuestro proceso estándar. También realizamos proyectos en la Península Ibérica y Portugal.',
   },
   {
-    q: '¿Cómo es la calidad frente a la construcción tradicional?',
-    a: 'Superior en múltiples aspectos. La fabricación en taller controlado garantiza precisión milimétrica imposible en obra. La estructura de acero estructural galvanizado supera en resistencia sísmica y durabilidad a la construcción convencional. La calificación energética A+ es estándar en todos nuestros proyectos.',
+    q: '¿Qué ventaja real tiene frente a la construcción tradicional?',
+    a: 'El control. En obra tradicional hay tres variables que no puedes dominar: el tiempo, las subcontratas y los imprevistos. Aquí la vivienda se fabrica bajo techo, con el mismo equipo, con tolerancias de milímetros. El resultado es más preciso, más eficiente energéticamente — calificación A+ de serie — y se entrega cuando dijimos.',
   },
   {
-    q: '¿Cómo empiezo el proceso?',
-    a: 'El primer paso es una reunión inicial gratuita donde conocemos tu proyecto: parcela, necesidades, estilo y presupuesto. Puedes solicitarla a través del formulario de contacto o por WhatsApp. En menos de 24h te respondemos para concertar la cita.',
+    q: '¿Cómo empezamos?',
+    a: 'Con una conversación. Cuéntanos qué tienes en mente: parcela, metros aproximados, estilo de vida y presupuesto orientativo. Hacemos un estudio de viabilidad gratuito y te decimos si el proyecto es viable antes de que te comprometas a nada. Escríbenos por el formulario o por WhatsApp — respondemos en menos de 24 horas.',
   },
 ]
 
