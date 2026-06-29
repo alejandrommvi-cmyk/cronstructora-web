@@ -23,8 +23,8 @@ export default function Footer() {
 
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-10 h-10 bg-white rounded-sm overflow-hidden">
-                <Image src="/logo-cms.png" alt="CMS Logo" fill className="object-contain p-0.5" />
+              <div className="relative w-10 h-10 overflow-hidden">
+                <Image src="/logo-removebg.png" alt="CMS Logo" fill className="object-contain p-0.5" />
               </div>
               <div>
                 <span className="text-[#F5A623] text-sm tracking-[0.3em] uppercase font-medium block">CMS</span>
@@ -76,9 +76,9 @@ export default function Footer() {
         <div className="py-6 border-t border-white/4 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/15 text-xs font-light">© 2025 Canary Modular System. Todos los derechos reservados.</p>
           <div className="flex gap-8">
-            {['Privacidad', 'Aviso legal', 'Cookies'].map((item) => (
-              <a key={item} href="#" className="text-white/15 hover:text-white/40 text-xs font-light transition-colors duration-300">{item}</a>
-            ))}
+            <a href="/privacidad" className="text-white/15 hover:text-white/40 text-xs font-light transition-colors duration-300">Privacidad</a>
+            <a href="/aviso-legal" className="text-white/15 hover:text-white/40 text-xs font-light transition-colors duration-300">Aviso legal</a>
+            <a href="/cookies" className="text-white/15 hover:text-white/40 text-xs font-light transition-colors duration-300">Cookies</a>
           </div>
         </div>
       </div>

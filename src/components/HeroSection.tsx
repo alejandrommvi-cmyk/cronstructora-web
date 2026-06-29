@@ -17,7 +17,7 @@ export default function HeroSection() {
       {/* Background — IA generated, copyright-free */}
       <motion.div style={{ y: imgY, scale: imgScale }} className="absolute inset-0 origin-center">
         <Image
-          src="/project-1.png"
+          src="/banner-hero.png"
           alt="Villa modular de lujo Canary Modular System"
           fill
           priority
@@ -136,12 +136,12 @@ export default function HeroSection() {
                 Diseño exclusivo &<br />eficiencia energética
               </h3>
               <p className="text-white/32 text-xs font-light leading-relaxed">
-                Del boceto a las llaves en 90 días. Sin sorpresas ni subcontratas.
+                Del boceto a las llaves en un tiempo récord. Sin sorpresas ni subcontratas.
               </p>
 
               {/* Mini stats */}
               <div className="mt-6 pt-5 border-t border-white/7 grid grid-cols-3 gap-2 text-center">
-                {[{ v: '90 d', l: 'entrega' }, { v: 'A+', l: 'energía' }, { v: '7', l: 'islas' }].map(({ v, l }) => (
+                {[{ v: 'A+', l: 'energía' }, { v: '7', l: 'islas' }, { v: '100%', l: 'llave en mano' }].map(({ v, l }) => (
                   <div key={l}>
                     <p className="font-display text-xl text-white font-light">{v}</p>
                     <p className="text-white/22 text-[8px] tracking-widest uppercase mt-0.5">{l}</p>
@@ -166,7 +166,7 @@ export default function HeroSection() {
             <div>
               <p className="text-white/75 text-sm font-light">Construcción industrializada</p>
               <p className="text-white/28 text-[10px] tracking-[0.22em] uppercase font-light mt-0.5">
-                Fabricación en taller · sin depender del clima
+                Control total de calidad · precisión milimétrica
               </p>
             </div>
           </div>

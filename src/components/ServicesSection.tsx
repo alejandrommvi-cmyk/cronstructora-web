@@ -25,7 +25,7 @@ const services = [
     number: '03',
     title: 'Rapidez de ejecución',
     description:
-      'De proyecto a llaves en menos de 90 días. La construcción industrializada elimina tiempos muertos y esperas propias de la obra tradicional. El reloj corre a tu favor.',
+      'La construcción industrializada elimina tiempos muertos y las esperas propias de la obra tradicional. Tu vivienda avanza incluso cuando llueve. El reloj siempre corre a tu favor.',
     tag: 'Proceso',
   },
   {

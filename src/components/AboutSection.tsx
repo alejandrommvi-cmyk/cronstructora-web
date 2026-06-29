@@ -47,8 +47,8 @@ export default function AboutSection() {
 
             <div className="mt-12 pt-10 border-t border-white/8 grid grid-cols-2 gap-10">
               <div>
-                <p className="font-display text-4xl text-white font-light mb-2">90 días</p>
-                <p className="text-white/25 text-xs tracking-[0.2em] uppercase">Plazo medio de entrega</p>
+                <p className="font-display text-4xl text-white font-light mb-2">Récord</p>
+                <p className="text-white/25 text-xs tracking-[0.2em] uppercase">Plazo de entrega imbatible</p>
               </div>
               <div>
                 <p className="font-display text-4xl text-white font-light mb-2">A+</p>
