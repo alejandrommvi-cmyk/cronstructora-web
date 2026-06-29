@@ -33,7 +33,7 @@ export default function CTASection() {
     <section id="contacto" className="relative py-24 lg:py-36 overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=85&fit=crop"
+          src="/project-1.png"
           alt="Vivienda modular de lujo CMS"
           fill
           className="object-cover object-center"

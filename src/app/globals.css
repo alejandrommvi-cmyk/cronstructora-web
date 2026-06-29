@@ -38,6 +38,11 @@ body {
   background: #C4A97C;
 }
 
+:focus-visible {
+  outline: 2px solid #F5A623;
+  outline-offset: 3px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
