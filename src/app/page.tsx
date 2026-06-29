@@ -5,7 +5,6 @@ import AboutSection from '@/components/AboutSection'
 import ServicesSection from '@/components/ServicesSection'
 import ComparisonSection from '@/components/ComparisonSection'
 import ProcessSection from '@/components/ProcessSection'
-import TrustSection from '@/components/TrustSection'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
 import CTASection from '@/components/CTASection'
@@ -25,7 +24,6 @@ export default function Home() {
       <ServicesSection />
       <ComparisonSection />
       <ProcessSection />
-      <TrustSection />
       <TestimonialsSection />
       <FAQSection />
       <CTASection />
