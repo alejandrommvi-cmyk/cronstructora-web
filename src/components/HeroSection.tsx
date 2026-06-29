@@ -20,7 +20,7 @@ export default function HeroSection() {
       {/* Background image with scroll zoom-in */}
       <motion.div style={{ y: imgY, scale: imgScale }} className="absolute inset-0 origin-center">
         <Image
-          src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=90&fit=crop"
+          src="/banner.png"
           alt="Villa modular de lujo Canary Modular System"
           fill
           priority

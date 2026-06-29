@@ -23,8 +23,8 @@ export default function Footer() {
 
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-10 h-10">
-                <Image src="/logo-dark.png" alt="CMS Logo" fill className="object-contain" />
+              <div className="relative w-10 h-10 bg-white rounded-sm overflow-hidden">
+                <Image src="/logo-cms.png" alt="CMS Logo" fill className="object-contain p-0.5" />
               </div>
               <div>
                 <span className="text-[#F5A623] text-sm tracking-[0.3em] uppercase font-medium block">CMS</span>
