@@ -6,45 +6,38 @@ import { motion, AnimatePresence } from 'framer-motion'
 const steps = [
   {
     number: '01',
-    title: 'Primera Reunión',
+    title: 'Primera reunión',
     description: 'Conocemos tu proyecto: parcela, necesidades, estilo de vida y presupuesto. Sin prisa. Establecemos juntos las bases del hogar que vas a construir.',
-    duration: '1 semana',
   },
   {
     number: '02',
-    title: 'Estudio de Viabilidad',
+    title: 'Estudio de viabilidad',
     description: 'Análisis técnico del terreno, normativa urbanística y factibilidad del proyecto. Validamos que todo es posible antes de que te comprometas a nada.',
-    duration: '1–2 semanas',
   },
   {
     number: '03',
-    title: 'Diseño Arquitectónico',
+    title: 'Diseño arquitectónico',
     description: 'Nuestros arquitectos crean el proyecto personalizado: planos, renders 3D, distribución interior, materiales y acabados exactamente a tu medida.',
-    duration: '2–3 semanas',
   },
   {
     number: '04',
-    title: 'Ingeniería y Documentación',
+    title: 'Ingeniería y documentación',
     description: 'Proyecto técnico completo, cálculo estructural de acero y gestión íntegra de licencias y permisos con las administraciones competentes.',
-    duration: '2–3 semanas',
   },
   {
     number: '05',
-    title: 'Fabricación Modular',
-    description: 'Los módulos de tu vivienda se fabrican en nuestro taller con control de calidad exhaustivo, en condiciones óptimas y sin depender del clima exterior.',
-    duration: '6–8 semanas',
+    title: 'Fabricación modular',
+    description: 'Los módulos de tu vivienda se fabrican en nuestro taller con control de calidad exhaustivo, en condiciones óptimas y con precisión milimétrica.',
   },
   {
     number: '06',
-    title: 'Transporte y Montaje',
+    title: 'Transporte y montaje',
     description: 'Los módulos se transportan y ensamblan en parcela en tiempo récord. La estructura completa queda erguida y sellada en cuestión de días.',
-    duration: '1 semana',
   },
   {
     number: '07',
-    title: 'Acabados y Entrega',
+    title: 'Acabados y entrega',
     description: 'Instalaciones, acabados interiores, urbanización exterior y entrega de llaves. Revisión final exhaustiva y plan de mantenimiento incluidos.',
-    duration: '1–2 semanas',
   },
 ]
 
@@ -70,16 +63,13 @@ export default function ProcessSection() {
             </div>
             <h2 className="font-display text-4xl lg:text-5xl xl:text-6xl text-white font-light leading-[1.08]">
               De cero a llaves
-              <br /><span className="italic text-[#F5A623]">en 90 días</span>
+              <br /><span className="italic text-[#F5A623]">más rápido de lo que imaginas</span>
             </h2>
           </div>
           <div className="flex flex-col items-start lg:items-end gap-2">
             <p className="text-white/35 text-sm font-light leading-relaxed max-w-xs lg:text-right">
               Siete fases de proceso industrializado, un único interlocutor y cero sorpresas.
             </p>
-            <span className="text-white/18 text-[10px] tracking-[0.35em] uppercase font-light mt-1">
-              7 fases · ~13 semanas
-            </span>
           </div>
         </motion.div>
 
@@ -128,13 +118,6 @@ export default function ProcessSection() {
                     >
                       {step.title}
                     </h3>
-                    <span
-                      className={`text-[10px] tracking-[0.28em] uppercase font-light shrink-0 hidden sm:block transition-colors duration-400 ${
-                        active === i ? 'text-[#F5A623]' : 'text-white/18'
-                      }`}
-                    >
-                      {step.duration}
-                    </span>
                   </div>
 
                   <AnimatePresence>

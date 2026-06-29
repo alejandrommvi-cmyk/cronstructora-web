@@ -43,8 +43,8 @@ export default function Navigation() {
 
             {/* Logo */}
             <a href="#" className="flex items-center gap-3 group cursor-none">
-              <div className="relative w-9 h-9 bg-white rounded-sm overflow-hidden">
-                <Image src="/logo-cms.png" alt="Canary Modular System" fill className="object-contain p-0.5" />
+              <div className="relative w-9 h-9 overflow-hidden">
+                <Image src="/logo-removebg.png" alt="Canary Modular System" fill className="object-contain p-0.5" />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-[#F5A623] text-[10px] tracking-[0.38em] uppercase font-medium">CMS</span>
@@ -98,8 +98,8 @@ export default function Navigation() {
             className="fixed inset-0 z-40 bg-[#0A0908] flex flex-col justify-center px-10"
           >
             <div className="flex items-center gap-3 absolute top-6 left-6">
-              <div className="relative w-9 h-9 bg-white rounded-sm overflow-hidden">
-                <Image src="/logo-cms.png" alt="CMS" fill className="object-contain p-0.5" />
+              <div className="relative w-9 h-9 overflow-hidden">
+                <Image src="/logo-removebg.png" alt="CMS" fill className="object-contain p-0.5" />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-[#F5A623] text-xs tracking-[0.3em] uppercase font-medium">CMS</span>

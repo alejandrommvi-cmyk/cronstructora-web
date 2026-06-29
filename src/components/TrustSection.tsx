@@ -6,8 +6,8 @@ import { motion, useInView } from 'framer-motion'
 const stats = [
   { value: 12, suffix: '+', label: 'Años de experiencia', description: 'Pioneros en construcción modular de lujo en Canarias' },
   { value: 85, suffix: '+', label: 'Viviendas entregadas', description: 'Hogares modulares de una planta en toda España' },
-  { value: 98, suffix: '%', label: 'Satisfacción cliente', description: 'Clientes que recomendarían CMS a su entorno' },
-  { value: 90, suffix: ' días', label: 'Plazo medio', description: 'Desde diseño aprobado hasta llaves en mano' },
+  { value: 98, suffix: '%', label: 'Satisfacción del cliente', description: 'Clientes que recomendarían CMS a su entorno' },
+  { value: 7, suffix: '', label: 'Islas cubiertas', description: 'Presencia y logística en todas las islas del archipiélago' },
 ]
 
 const badges = ['Clase Energética A+', 'ISO 9001', 'CE Certificado', 'Garantía 10 años', 'Financiación propia']

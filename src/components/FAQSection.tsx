@@ -6,8 +6,8 @@ import { Plus, Minus } from 'lucide-react'
 
 const faqs = [
   {
-    q: '¿Los 90 días son reales?',
-    a: 'Sí. El plazo arranca desde la firma del contrato y cubre diseño final, fabricación en taller, transporte, montaje en parcela e instalaciones y acabados. La clave es que la mayor parte del tiempo ocurre bajo techo en nuestras instalaciones — sin esperas por lluvia, sin retrasos por permisos menores. En la primera reunión te mostramos el cronograma real de proyectos anteriores.',
+    q: '¿Cuánto tarda realmente el proceso?',
+    a: 'Depende de cada proyecto: la complejidad del diseño, los trámites urbanísticos de cada municipio y la logística de la parcela influyen en el calendario final. Lo que sí podemos garantizarte es que nuestro sistema industrializado es significativamente más rápido que la obra tradicional, porque la mayor parte de la construcción ocurre bajo techo en nuestras instalaciones, sin esperas por lluvia ni retrasos de subcontratas. En la primera reunión te presentamos el cronograma estimado con datos reales de proyectos anteriores.',
   },
   {
     q: '¿Puedo modificar la distribución a mitad del proceso?',
