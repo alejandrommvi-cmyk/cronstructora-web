@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
+import Image from 'next/image'
 
 const projects = [
   {
@@ -12,8 +13,7 @@ const projects = [
     category: 'Vivienda modular lujo',
     year: '2024',
     m2: '280 m²',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=88&fit=crop',
-    size: 'large',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=88&fit=crop',
   },
   {
     id: 2,
@@ -23,7 +23,6 @@ const projects = [
     year: '2024',
     m2: '220 m²',
     image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=88&fit=crop',
-    size: 'small',
   },
   {
     id: 3,
@@ -32,8 +31,7 @@ const projects = [
     category: 'Obra nueva modular',
     year: '2024',
     m2: '195 m²',
-    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=88&fit=crop',
-    size: 'small',
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&q=88&fit=crop',
   },
   {
     id: 4,
@@ -42,8 +40,7 @@ const projects = [
     category: 'Modular A+',
     year: '2023',
     m2: '175 m²',
-    image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=700&q=88&fit=crop',
-    size: 'bottom',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=88&fit=crop',
   },
   {
     id: 5,
@@ -53,7 +50,6 @@ const projects = [
     year: '2023',
     m2: '245 m²',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=88&fit=crop',
-    size: 'bottom',
   },
   {
     id: 6,
@@ -62,128 +58,132 @@ const projects = [
     category: 'Modular sostenible',
     year: '2023',
     m2: '160 m²',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=88&fit=crop',
-    size: 'bottom',
+    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=700&q=88&fit=crop',
   },
 ]
 
-const filters = ['Todos', 'Modular lujo', 'Bioclimática', 'Sostenible']
+function SplitPanel({
+  image, eyebrow, title, btnLabel, href, delay = 0,
+}: {
+  image: string; eyebrow: string; title: string; btnLabel: string; href: string; delay?: number
+}) {
+  const ref = useRef<HTMLDivElement>(null)
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
+  const imgY = useTransform(scrollYProgress, [0, 1], ['-8%', '8%'])
 
-function ProjectCard({ project, delay = 0 }: { project: (typeof projects)[0]; delay?: number }) {
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.9, delay }}
+      className="relative h-[520px] lg:h-[640px] overflow-hidden group cursor-none"
+    >
+      <motion.div style={{ y: imgY }} className="absolute inset-0 scale-110">
+        <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+      </motion.div>
+      <div className="absolute inset-0 bg-[#0A0908]/55 group-hover:bg-[#0A0908]/40 transition-colors duration-700" />
+
+      {/* Text */}
+      <div className="absolute bottom-10 left-10 right-10">
+        <span className="text-white/40 text-[10px] tracking-[0.4em] uppercase block mb-3">{eyebrow}</span>
+        <h3 className="font-display text-2xl lg:text-3xl text-white font-light leading-snug">{title}</h3>
+      </div>
+
+      {/* Norris-style circular button */}
+      <motion.a
+        href={href}
+        whileHover={{ scale: 1.08 }}
+        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        className="absolute bottom-10 right-10 w-24 h-24 rounded-full bg-[#0A0908]/80 backdrop-blur-sm border border-white/15 flex items-center justify-center group/btn cursor-none"
+      >
+        <span className="text-white text-[10px] tracking-[0.15em] uppercase text-center leading-tight font-light px-2">
+          {btnLabel}
+        </span>
+        <div className="absolute inset-0 rounded-full border border-[#F5A623]/0 group-hover/btn:border-[#F5A623]/60 transition-all duration-400" />
+      </motion.a>
+    </motion.div>
+  )
+}
+
+function ProjectCard({ project, delay = 0 }: { project: typeof projects[0]; delay?: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative overflow-hidden cursor-pointer"
+      transition={{ duration: 0.85, delay, ease: [0.22, 1, 0.36, 1] }}
+      className="group relative overflow-hidden cursor-none"
     >
-      <div
-        className={`relative overflow-hidden ${
-          project.size === 'large' ? 'aspect-[4/3]' : project.size === 'small' ? 'aspect-video' : 'aspect-[4/3] lg:aspect-[3/2]'
-        }`}
-      >
-        <img
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <Image
           src={project.image}
           alt={project.name}
-          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-          style={{ filter: 'grayscale(10%) brightness(0.92)' }}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-106"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          style={{ filter: 'brightness(0.9)' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0F0E0E]/95 via-[#0F0E0E]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0908]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-        <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-[#F5A623] text-xs tracking-[0.25em] uppercase">{project.category}</span>
-            <span className="text-white/40 text-xs">{project.m2}</span>
-          </div>
-          <h3 className="font-display text-xl lg:text-2xl text-white mb-1">{project.name}</h3>
-          <p className="text-white/50 text-xs tracking-wide">{project.location} · {project.year}</p>
-          <div className="mt-4 inline-flex items-center gap-2 text-white/60 text-xs tracking-widest uppercase group/link hover:text-[#F5A623] transition-colors">
-            Ver proyecto <ArrowUpRight size={12} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+        <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+          <span className="text-[#F5A623] text-[10px] tracking-[0.25em] uppercase block mb-1">{project.category}</span>
+          <h3 className="font-display text-xl text-white font-light">{project.name}</h3>
+          <p className="text-white/45 text-xs mt-1">{project.location} · {project.m2} · {project.year}</p>
+          <div className="mt-3 inline-flex items-center gap-1.5 text-white/55 text-[10px] tracking-widest uppercase hover:text-[#F5A623] transition-colors group/lnk">
+            Ver proyecto <ArrowUpRight size={11} className="group-hover/lnk:translate-x-0.5 group-hover/lnk:-translate-y-0.5 transition-transform" />
           </div>
         </div>
 
-        {/* Orange corner accent on hover */}
-        <div className="absolute top-0 left-0 w-0 h-0 border-t-[3px] border-l-[3px] border-[#F5A623] opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-500" />
+        <div className="absolute top-0 left-0 w-0 h-0 border-t-[2.5px] border-l-[2.5px] border-[#F5A623] opacity-0 group-hover:opacity-100 group-hover:w-10 group-hover:h-10 transition-all duration-500" />
       </div>
     </motion.div>
   )
 }
 
 export default function PortfolioSection() {
-  const [activeFilter, setActiveFilter] = useState('Todos')
-
   return (
-    <section id="proyectos" className="bg-[#F4F1EC] py-24 lg:py-36">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-8 h-px bg-[#F5A623]" />
-              <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">Portfolio</span>
-            </div>
-            <h2 className="font-display text-4xl lg:text-5xl xl:text-6xl text-[#0F0E0E] font-light leading-[1.1]">
-              Viviendas que
-              <br /><span className="italic text-[#C8881A]">transforman vidas</span>
-            </h2>
-          </motion.div>
+    <section id="proyectos" className="bg-[#0A0908]">
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-wrap gap-2"
-          >
-            {filters.map((filter) => (
-              <button
-                key={filter}
-                onClick={() => setActiveFilter(filter)}
-                className={`px-5 py-2 text-xs tracking-[0.15em] uppercase font-light transition-all duration-300 ${
-                  activeFilter === filter
-                    ? 'bg-[#0F0E0E] text-white'
-                    : 'text-[#0F0E0E]/40 hover:text-[#0F0E0E] border border-transparent hover:border-[#0F0E0E]/15'
-                }`}
-              >
-                {filter}
-              </button>
-            ))}
-          </motion.div>
-        </div>
+      {/* Norris-style split panels */}
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <SplitPanel
+          image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=88&fit=crop"
+          eyebrow="Hablemos de tu proyecto"
+          title={'Solicita una\nconsulta gratuita'}
+          btnLabel="Contactar"
+          href="#contacto"
+          delay={0}
+        />
+        <SplitPanel
+          image="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=88&fit=crop"
+          eyebrow="Nuestros proyectos"
+          title={'Explora el\nportfolio CMS'}
+          btnLabel="Ver todo"
+          href="#proyectos-grid"
+          delay={0.1}
+        />
+      </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
-          <div className="lg:col-span-7">
-            <ProjectCard project={projects[0]} delay={0} />
-          </div>
-          <div className="lg:col-span-5 grid grid-rows-2 gap-3">
-            <ProjectCard project={projects[1]} delay={0.1} />
-            <ProjectCard project={projects[2]} delay={0.2} />
-          </div>
-          <div className="lg:col-span-4"><ProjectCard project={projects[3]} delay={0.1} /></div>
-          <div className="lg:col-span-4"><ProjectCard project={projects[4]} delay={0.2} /></div>
-          <div className="lg:col-span-4"><ProjectCard project={projects[5]} delay={0.3} /></div>
-        </div>
-
+      {/* Project grid */}
+      <div id="proyectos-grid" className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-14 flex justify-center"
+          transition={{ duration: 0.8 }}
+          className="flex items-center gap-4 mb-14"
         >
-          <a
-            href="#contacto"
-            className="inline-flex items-center gap-3 text-[#0F0E0E]/50 hover:text-[#F5A623] text-xs tracking-[0.2em] uppercase border-b border-[#0F0E0E]/15 hover:border-[#F5A623] pb-1 transition-all duration-300 group"
-          >
-            Ver todos los proyectos
-            <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </a>
+          <div className="w-8 h-px bg-[#F5A623]" />
+          <span className="text-[#F5A623] text-xs tracking-[0.35em] uppercase font-light">Proyectos realizados</span>
         </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+          {projects.map((project, i) => (
+            <ProjectCard key={project.id} project={project} delay={i * 0.08} />
+          ))}
+        </div>
       </div>
     </section>
   )
