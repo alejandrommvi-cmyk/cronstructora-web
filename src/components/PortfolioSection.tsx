@@ -13,7 +13,7 @@ const projects = [
     category: 'Vivienda modular A+',
     year: '2024',
     m2: '210 m²',
-    image: '/project-1.png',
+    image: 'https://images.unsplash.com/9v0hHu1WoWI?w=700&q=88&fit=crop',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
     category: 'Modular premium',
     year: '2024',
     m2: '220 m²',
-    image: '/project-3.jpeg',
+    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=88&fit=crop',
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projects = [
     category: 'Obra nueva modular',
     year: '2024',
     m2: '195 m²',
-    image: '/project-4.jpeg',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=88&fit=crop',
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const projects = [
     category: 'Modular A+',
     year: '2023',
     m2: '175 m²',
-    image: '/project-5.jpeg',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=88&fit=crop',
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const projects = [
     category: 'Vivienda bioclimática',
     year: '2023',
     m2: '245 m²',
-    image: '/project-6.jpeg',
+    image: 'https://images.unsplash.com/GZezxeKOznc?w=700&q=88&fit=crop',
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const projects = [
     category: 'Vivienda modular lujo',
     year: '2024',
     m2: '280 m²',
-    image: '/project-2.jpeg',
+    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=700&q=88&fit=crop',
   },
 ]
 
@@ -149,7 +149,7 @@ export default function PortfolioSection() {
       {/* Norris-style split panels */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <SplitPanel
-          image="/banner.png"
+          image="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=88&fit=crop"
           eyebrow="Hablemos de tu proyecto"
           title={'Solicita una\nconsulta gratuita'}
           btnLabel="Contactar"
@@ -157,7 +157,7 @@ export default function PortfolioSection() {
           delay={0}
         />
         <SplitPanel
-          image="/project-2.jpeg"
+          image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=88&fit=crop"
           eyebrow="Nuestra galería"
           title={'Explora la\ngalería CMS'}
           btnLabel="Ver todo"
