@@ -76,7 +76,7 @@ export default function CTASection() {
             </div>
 
             <a
-              href="https://wa.me/34624743682"
+              href="https://wa.me/34624743682?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20una%20vivienda%20modular%20en%20Canarias."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#F5A623] text-[#0F0E0E] px-8 py-4 text-xs tracking-[0.15em] uppercase font-medium hover:bg-[#F7B84B] transition-colors duration-300"
