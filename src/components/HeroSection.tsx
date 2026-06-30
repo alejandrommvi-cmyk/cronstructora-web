@@ -33,7 +33,7 @@ export default function HeroSection() {
       <motion.div style={{ opacity }} className="relative z-10 min-h-screen flex flex-col">
 
         {/* Main area: headline left + floating card right */}
-        <div className="flex-1 grid lg:grid-cols-2 items-end max-w-[1600px] mx-auto w-full px-6 lg:px-14 pt-36 pb-0">
+        <div className="flex-1 grid lg:grid-cols-2 items-center lg:items-end max-w-[1600px] mx-auto w-full px-6 lg:px-14 pt-24 sm:pt-32 lg:pt-36 pb-0">
 
           {/* LEFT — headline + tagline + CTA */}
           <motion.div
@@ -55,7 +55,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 70 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.65, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display font-bold text-[3rem] sm:text-[4.2rem] lg:text-[5.5rem] xl:text-[6.8rem] text-white uppercase leading-[0.86] tracking-[-0.02em] mb-7"
+              className="font-display font-bold text-[2.6rem] sm:text-[4.2rem] lg:text-[5.5rem] xl:text-[6.8rem] text-white uppercase leading-[0.92] lg:leading-[0.86] tracking-[-0.02em] mb-7"
             >
               EL HOGAR<br />
               QUE<br />
@@ -75,7 +75,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.25, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-3"
+              className="flex flex-row flex-wrap gap-3"
             >
               <a
                 href="#contacto"
