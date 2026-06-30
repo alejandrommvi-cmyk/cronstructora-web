@@ -7,11 +7,11 @@ import { Plus, Minus } from 'lucide-react'
 const faqs = [
   {
     q: '¿Cuánto tarda realmente el proceso?',
-    a: 'Depende de cada proyecto: la complejidad del diseño, los trámites urbanísticos de cada municipio y la logística de la parcela influyen en el calendario final. Lo que sí podemos garantizarte es que nuestro sistema industrializado es significativamente más rápido que la obra tradicional, porque la mayor parte de la construcción ocurre bajo techo en nuestras instalaciones, sin esperas por lluvia ni retrasos de subcontratas. En la primera reunión te presentamos el cronograma estimado con datos reales de proyectos anteriores.',
+    a: 'Cada proyecto tiene unos plazos específicos, determinados por factores como el diseño, la gestión de licencias y las características de la parcela. Gracias a nuestro sistema de construcción industrializada, gran parte de la vivienda se fabrica en un entorno controlado, lo que reduce significativamente los tiempos de ejecución y minimiza los retrasos habituales de la obra tradicional. Desde el primer momento te proporcionamos un cronograma claro y personalizado para que conozcas cada etapa del proyecto con total transparencia.',
   },
   {
-    q: '¿Puedo modificar la distribución a mitad del proceso?',
-    a: 'Antes de que empiece la fabricación, sí — casi todo. Por eso la fase de diseño no tiene prisa: trabajamos contigo hasta que cada detalle esté claro. Distribución, materiales, alturas, orientación. Una vez arranca el taller, los cambios estructurales no son posibles. Pero si llegamos a ese punto con dudas, algo habremos hecho mal nosotros.',
+    q: '¿Qué hace diferente nuestra metodología?',
+    a: 'No entendemos la construcción como una suma de tareas independientes, sino como un proceso perfectamente coordinado. Arquitectura, ingeniería, fabricación y montaje trabajan desde el primer día bajo una misma planificación, evitando improvisaciones y asegurando que cada decisión contribuya al resultado final. Esta forma de trabajar nos permite mantener un control absoluto sobre el proyecto de principio a fin.',
   },
   {
     q: '¿Cuánto cuesta aproximadamente?',

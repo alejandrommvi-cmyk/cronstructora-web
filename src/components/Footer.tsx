@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Instagram, Linkedin, Facebook } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 
 const navLinks = [
   { href: '#galeria', label: 'Galería' },
@@ -7,12 +7,6 @@ const navLinks = [
   { href: '#nosotros', label: 'Sobre CMS' },
   { href: '#proceso', label: 'Nuestro proceso' },
   { href: '#contacto', label: 'Contacto' },
-]
-
-const socials = [
-  { Icon: Instagram, href: '#', label: 'Instagram' },
-  { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { Icon: Facebook, href: '#', label: 'Facebook' },
 ]
 
 export default function Footer() {
@@ -32,14 +26,12 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/25 text-sm leading-relaxed max-w-xs font-light">
-              Viviendas modulares de lujo de una planta. Diseño exclusivo, eficiencia A+ y entrega llave en mano en toda Canarias.
+              Viviendas modulares premium de una planta. Diseño exclusivo, eficiencia A+ y entrega llave en mano en toda Canarias.
             </p>
             <div className="flex gap-3 mt-8">
-              {socials.map(({ Icon, href, label }) => (
-                <a key={label} href={href} aria-label={label} className="w-9 h-9 border border-white/8 flex items-center justify-center text-white/30 hover:text-[#F5A623] hover:border-[#F5A623]/30 transition-all duration-300">
-                  <Icon size={13} />
-                </a>
-              ))}
+              <a href="#" aria-label="Instagram" className="w-9 h-9 border border-white/8 flex items-center justify-center text-white/30 hover:text-[#F5A623] hover:border-[#F5A623]/30 transition-all duration-300">
+                <Instagram size={13} />
+              </a>
             </div>
           </div>
 
@@ -59,12 +51,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white/15 text-xs tracking-[0.3em] uppercase mb-6 font-light">Contacto</h4>
             <ul className="space-y-3">
-              <li className="text-white/30 text-sm font-light">hola@cmscanarias.com</li>
-              <li className="text-white/30 text-sm font-light">+34 900 000 000</li>
-              <li className="text-white/30 text-sm font-light leading-relaxed">
-                Av. de Anaga, 35<br />
-                38001 · Santa Cruz de Tenerife
-              </li>
+              <li className="text-white/30 text-sm font-light">canarymodularsystem@gmail.com</li>
+              <li className="text-white/30 text-sm font-light">+34 624 743 682</li>
+              <li className="text-white/30 text-sm font-light">Santa Cruz de Tenerife</li>
             </ul>
             <div className="mt-6 pt-6 border-t border-white/5">
               <p className="text-white/15 text-xs tracking-[0.2em] uppercase mb-2 font-light">Zonas de actuación</p>
@@ -74,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="py-6 border-t border-white/4 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/15 text-xs font-light">© 2025 Canary Modular System. Todos los derechos reservados.</p>
+          <p className="text-white/15 text-xs font-light">© 2026 Canary Modular System. Todos los derechos reservados.</p>
           <div className="flex gap-8">
             <a href="/privacidad" className="text-white/15 hover:text-white/40 text-xs font-light transition-colors duration-300">Privacidad</a>
             <a href="/aviso-legal" className="text-white/15 hover:text-white/40 text-xs font-light transition-colors duration-300">Aviso legal</a>

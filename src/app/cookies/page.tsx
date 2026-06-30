@@ -35,7 +35,7 @@ export default function CookiesPage() {
           <h1 className="font-display text-4xl lg:text-5xl text-[#0F0E0E] font-light leading-tight mb-4">
             Política de Cookies
           </h1>
-          <p className="text-[#0F0E0E]/45 text-sm font-light">Última actualización: junio de 2025</p>
+          <p className="text-[#0F0E0E]/45 text-sm font-light">Última actualización: junio de 2026</p>
         </div>
 
         <div className="prose-legal">
@@ -156,7 +156,7 @@ export default function CookiesPage() {
 
           <h2>7. Más información</h2>
           <p>
-            Para cualquier consulta sobre el uso de cookies o el tratamiento de sus datos personales, puede contactar con nosotros en hola@cmscanarias.com. Puede obtener información adicional sobre la normativa de cookies en el sitio web de la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a>).
+            Para cualquier consulta sobre el uso de cookies o el tratamiento de sus datos personales, puede contactar con nosotros en canarymodularsystem@gmail.com. Puede obtener información adicional sobre la normativa de cookies en el sitio web de la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a>).
           </p>
         </div>
 
@@ -168,7 +168,7 @@ export default function CookiesPage() {
 
       <footer className="bg-[#0A0908] py-8">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <p className="text-white/15 text-xs font-light text-center">© 2025 Canary Modular System. Todos los derechos reservados.</p>
+          <p className="text-white/15 text-xs font-light text-center">© 2026 Canary Modular System. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>

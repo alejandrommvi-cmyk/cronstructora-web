@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     'Canary Modular System. Diseñamos y construimos viviendas modulares de máxima calidad en Canarias. Personalizadas, eficientes, llave en mano. Transformamos la forma de vivir.',
   keywords:
-    'canary modular system, construcción modular canarias, viviendas modulares lujo, casas modulares canarias, vivienda prefabricada acero, construcción industrializada canarias',
+    'canary modular system, construcción modular canarias, viviendas modulares premium, casas modulares canarias, vivienda prefabricada acero, construcción industrializada canarias',
   openGraph: {
     title: 'Canary Modular System — Construimos hogares. Diseñamos libertad.',
     description: 'Viviendas modulares de alta calidad en Canarias. Personalizadas, eficientes y llave en mano.',

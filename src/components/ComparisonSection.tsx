@@ -98,13 +98,19 @@ export default function ComparisonSection() {
               {/* Modular */}
               <div className="bg-[#0A0908]/3 px-4 lg:px-8 py-5 lg:py-8 flex gap-4 items-start">
                 <CheckCircle size={14} className="text-[#F5A623] shrink-0 mt-0.5" />
-                <p className="text-[#0F0E0E]/75 text-sm font-light leading-relaxed">{row.modular}</p>
+                <div>
+                  <span className="lg:hidden text-[#F5A623] text-[9px] tracking-[0.3em] uppercase font-light block mb-1">CMS</span>
+                  <p className="text-[#0F0E0E]/75 text-sm font-light leading-relaxed">{row.modular}</p>
+                </div>
               </div>
 
               {/* Traditional */}
               <div className="px-4 lg:px-8 py-5 lg:py-8 flex gap-4 items-start">
                 <XCircle size={14} className="text-[#0F0E0E]/22 shrink-0 mt-0.5" />
-                <p className="text-[#0F0E0E]/38 text-sm font-light leading-relaxed">{row.traditional}</p>
+                <div>
+                  <span className="lg:hidden text-[#0F0E0E]/30 text-[9px] tracking-[0.3em] uppercase font-light block mb-1">Tradicional</span>
+                  <p className="text-[#0F0E0E]/38 text-sm font-light leading-relaxed">{row.traditional}</p>
+                </div>
               </div>
             </motion.div>
           ))}

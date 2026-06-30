@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const stats = [
-  { value: 12, suffix: '+', label: 'Años de experiencia', description: 'Pioneros en construcción modular de lujo en Canarias' },
+  { value: 12, suffix: '+', label: 'Años de experiencia', description: 'Pioneros en construcción modular premium en Canarias' },
   { value: 85, suffix: '+', label: 'Viviendas entregadas', description: 'Hogares modulares de una planta en toda España' },
   { value: 98, suffix: '%', label: 'Satisfacción del cliente', description: 'Clientes que recomendarían CMS a su entorno' },
   { value: 7, suffix: '', label: 'Islas cubiertas', description: 'Presencia y logística en todas las islas del archipiélago' },
@@ -53,7 +53,7 @@ export default function TrustSection() {
           </div>
           <h2 className="font-display text-4xl lg:text-5xl xl:text-6xl text-white font-light leading-[1.1] max-w-2xl">
             Líderes en construcción
-            <br /><span className="italic text-[#F5A623]">modular de lujo</span>
+            <br /><span className="italic text-[#F5A623]">modular premium</span>
           </h2>
         </motion.div>
 

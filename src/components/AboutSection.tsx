@@ -75,7 +75,7 @@ export default function AboutSection() {
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=88&fit=crop"
-                alt="Vivienda modular de lujo Canary Modular System"
+                alt="Vivienda modular premium Canary Modular System"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
