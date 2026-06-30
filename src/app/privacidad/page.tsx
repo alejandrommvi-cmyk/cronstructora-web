@@ -36,7 +36,7 @@ export default function PrivacidadPage() {
           <h1 className="font-display text-4xl lg:text-5xl text-[#0F0E0E] font-light leading-tight mb-4">
             Política de Privacidad
           </h1>
-          <p className="text-[#0F0E0E]/45 text-sm font-light">Última actualización: junio de 2025</p>
+          <p className="text-[#0F0E0E]/45 text-sm font-light">Última actualización: junio de 2026</p>
         </div>
 
         <div className="prose-legal">
@@ -49,8 +49,8 @@ export default function PrivacidadPage() {
             <li><strong>Denominación social:</strong> Canary Modular System, S.L.</li>
             <li><strong>CIF:</strong> B-XXXXXXXX (en trámite de constitución)</li>
             <li><strong>Domicilio social:</strong> Av. de Anaga, 35, 38001 Santa Cruz de Tenerife</li>
-            <li><strong>Correo electrónico:</strong> hola@cmscanarias.com</li>
-            <li><strong>Teléfono:</strong> +34 900 000 000</li>
+            <li><strong>Correo electrónico:</strong> canarymodularsystem@gmail.com</li>
+            <li><strong>Teléfono:</strong> +34 624 743 682</li>
           </ul>
 
           <h2>2. Finalidad del tratamiento</h2>
@@ -99,7 +99,7 @@ export default function PrivacidadPage() {
             <li><strong>Retirada del consentimiento:</strong> retirar en cualquier momento el consentimiento otorgado, sin que ello afecte a la licitud del tratamiento previo.</li>
           </ul>
           <p>
-            Para ejercer estos derechos, puede dirigirse por escrito a hola@cmscanarias.com, adjuntando copia de su documento de identidad. Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) en <strong>www.aepd.es</strong> si considera que el tratamiento de sus datos no es conforme a la normativa vigente.
+            Para ejercer estos derechos, puede dirigirse por escrito a canarymodularsystem@gmail.com, adjuntando copia de su documento de identidad. Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) en <strong>www.aepd.es</strong> si considera que el tratamiento de sus datos no es conforme a la normativa vigente.
           </p>
 
           <h2>8. Seguridad</h2>
@@ -121,7 +121,7 @@ export default function PrivacidadPage() {
 
       <footer className="bg-[#0A0908] py-8">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <p className="text-white/15 text-xs font-light text-center">© 2025 Canary Modular System. Todos los derechos reservados.</p>
+          <p className="text-white/15 text-xs font-light text-center">© 2026 Canary Modular System. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>

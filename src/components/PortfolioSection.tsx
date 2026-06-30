@@ -55,7 +55,7 @@ const projects = [
     id: 6,
     name: 'Casa Cala Blanca',
     location: 'Lanzarote, Canarias',
-    category: 'Vivienda modular lujo',
+    category: 'Vivienda modular premium',
     year: '2024',
     m2: '280 m²',
     image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=700&q=88&fit=crop',

@@ -9,7 +9,7 @@ const services = [
     number: '01',
     title: 'Construcción industrializada',
     description:
-      'Fabricación de precisión milimétrica en taller controlado. Sin depender del clima ni de contratiempos de obra. Calidad consistente en cada módulo, medida al milímetro.',
+      'Construimos en fábrica para ofrecer un resultado superior. Cada módulo se desarrolla en un entorno industrial controlado que garantiza una calidad constante, mayor precisión y una ejecución más eficiente desde el primer día.',
     tag: 'Core',
   },
   {
@@ -31,9 +31,9 @@ const services = [
   {
     Icon: Key,
     number: '04',
-    title: 'Gestión integral llave en mano',
+    title: 'Llave en mano',
     description:
-      'Un único interlocutor desde el primer boceto hasta la entrega de llaves. Diseño, permisos, fabricación, instalación y postventa incluidos. Sin subcontratas externas.',
+      'Nos ocupamos de todo para que tú solo te preocupes de disfrutar tu vivienda. Coordinamos cada fase del proyecto, desde el diseño inicial hasta la entrega final, garantizando un proceso ágil, transparente y sin complicaciones.',
     tag: 'Servicio',
   },
   {

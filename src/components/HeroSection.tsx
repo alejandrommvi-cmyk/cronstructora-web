@@ -18,7 +18,7 @@ export default function HeroSection() {
       <motion.div style={{ y: imgY, scale: imgScale }} className="absolute inset-0 origin-center">
         <Image
           src="/banner-hero.png"
-          alt="Villa modular de lujo Canary Modular System"
+          alt="Villa modular premium Canary Modular System"
           fill
           priority
           className="object-cover object-center"
@@ -68,7 +68,7 @@ export default function HeroSection() {
               transition={{ delay: 1.1, duration: 0.8 }}
               className="text-white/38 text-sm font-light tracking-[0.1em] mb-10"
             >
-              / Viviendas modulares de lujo · Islas Canarias /
+              / Viviendas modulares premium · Islas Canarias /
             </motion.p>
 
             <motion.div

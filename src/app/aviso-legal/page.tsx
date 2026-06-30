@@ -35,7 +35,7 @@ export default function AvisoLegalPage() {
           <h1 className="font-display text-4xl lg:text-5xl text-[#0F0E0E] font-light leading-tight mb-4">
             Aviso Legal
           </h1>
-          <p className="text-[#0F0E0E]/45 text-sm font-light">Última actualización: junio de 2025</p>
+          <p className="text-[#0F0E0E]/45 text-sm font-light">Última actualización: junio de 2026</p>
         </div>
 
         <div className="prose-legal">
@@ -46,8 +46,8 @@ export default function AvisoLegalPage() {
             <li><strong>Denominación social:</strong> Canary Modular System, S.L.</li>
             <li><strong>CIF:</strong> B-XXXXXXXX</li>
             <li><strong>Domicilio social:</strong> Av. de Anaga, 35, 38001 Santa Cruz de Tenerife, España</li>
-            <li><strong>Correo electrónico:</strong> hola@cmscanarias.com</li>
-            <li><strong>Teléfono:</strong> +34 900 000 000</li>
+            <li><strong>Correo electrónico:</strong> canarymodularsystem@gmail.com</li>
+            <li><strong>Teléfono:</strong> +34 624 743 682</li>
             <li><strong>Registro Mercantil:</strong> Inscrita en el Registro Mercantil de Santa Cruz de Tenerife</li>
           </ul>
 
@@ -108,7 +108,7 @@ export default function AvisoLegalPage() {
 
       <footer className="bg-[#0A0908] py-8">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <p className="text-white/15 text-xs font-light text-center">© 2025 Canary Modular System. Todos los derechos reservados.</p>
+          <p className="text-white/15 text-xs font-light text-center">© 2026 Canary Modular System. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>
